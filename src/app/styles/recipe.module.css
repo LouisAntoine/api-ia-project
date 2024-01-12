@@ -1,0 +1,27 @@
+.ratingForm {
+  margin-bottom: 20px;
+}
+
+.ratingForm p {
+  margin-bottom: 10px;
+}
+
+.ratingForm input,
+.ratingForm textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.ratingForm button {
+  background-color: #4caf50; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  padding: 10px 15px; /* Rembourrage du bouton */
+  border: none; /* Supprimer la bordure du bouton */
+  border-radius: 4px; /* Coins arrondis du bouton */
+  cursor: pointer; /* Curseur pointeur sur le bouton */
+}
+
+.ratingForm button:hover {
+  background-color: #45a049; /* Changement de couleur au survol du bouton */
+}

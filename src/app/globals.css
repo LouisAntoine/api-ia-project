@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.custom-pre {
+  white-space: pre-wrap;
+  @apply bg-gray-100 text-gray-800 font-sans;
+}
+
+.home-wrap {
+  position: relative;
+}
+
+.home-wrap::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  background-image: url('/assets/background.jpeg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.home-content {
+  position: relative;
+}
+.search-wrap {
+  position: relative;
+}
+
+.search-wrap::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.2;
+  background-image: url('/assets/search.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.search-content {
+  position: relative;
+}
+
+
